@@ -11,5 +11,5 @@ const Preço do produto = 39.90
 const Quantidade =  3
 const Desconto = 11.97
 
-coonsole.log("valor total da compra:" P * Q); 
+console.log("valor total da compra:" P * Q); 
 
