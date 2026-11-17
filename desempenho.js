@@ -11,18 +11,18 @@ const rl = readline.createInterface({
 });
 //solicita a nota ao usuário
 rl.question('informe a nota do aluno (0 a 10): ', (resposta) => {
-  const nota = number(resposta; // converte para número
+  const nota = Number(resposta; // converte para número
   // validação de nota
   if (isNaN(nota) || nota < 0 || nota > 10) {
     console.log('nota inválida! Digite um valor entre 0 e 10.');
   } else if(nota >= 9.0) {
-    console.log('nota: ${nota.tofixed(1)} - Resulyado: Excelente`);
+    console.log('nota: ${nota.tofixed(1)} - Resultado: Excelente`);
   } else if(nota >= 7.0) {
-    console.log('nota: ${nota.tofixed(1)} - Resulyado: Bom`);
+    console.log('nota: ${nota.tofixed(1)} - Resultado: Bom`);
   } else if(nota >= 5.0) {
-    console.log('nota: ${nota.tofixed(1)} - Resulyado: Regular`);
+    console.log('nota: ${nota.tofixed(1)} - Resultado: Regular`);
   } else {
-    console.log('nota: ${nota.tofixed(1)} - Resulyado: Reprovado`);
+    console.log('nota: ${nota.tofixed(1)} - Resultado: Reprovado`);
   }
   rl.close(): // Encerra a leitura no terminal
 });
